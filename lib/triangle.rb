@@ -8,7 +8,7 @@ class Triangle
   end
 
   def valid?
-    @a && @b && @c > 0 && (@a + @b > @c || @a + @c > @b || @b + @c > @a)
+    @a && @b && @c > 0 
   end
 
   def kind
