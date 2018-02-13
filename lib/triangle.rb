@@ -20,7 +20,7 @@ class Triangle
     else
       return :scalene
     end
-  elsif  valid? == false || ()@a + @b > @c || @a + @c > @b || @b + @c > @a) == false
+  elsif  valid? == false || (@a + @b > @c || @a + @c > @b || @b + @c > @a) == false
     raise TriangleError
     end
   end
