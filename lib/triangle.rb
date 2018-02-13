@@ -8,7 +8,7 @@ class Triangle
   end
 
   def valid?
-    @a && @b && @c > 0 
+    @a && @b && @c > 0
   end
 
   def kind
@@ -20,7 +20,7 @@ class Triangle
     else
       return :scalene
     end
-  elsif  valid? == false
+  elsif  valid? == false && @a + @b > @c || @a + @c > @b || @b + @c > @a == false
     raise TriangleError
     end
   end
