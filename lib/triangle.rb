@@ -8,7 +8,6 @@ class Triangle
   end
 
   def valid?
-    binding.pry
     @a && @b && @c > 0 && (@a + @b > @c || @a + @c > @b || @b + @c > @a)
   end
 
